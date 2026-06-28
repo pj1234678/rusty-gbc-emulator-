@@ -1,0 +1,17 @@
+[package]
+name = "gbcemu"
+version = "0.1.0"
+authors = ["Assil Ksiksi <cyph0nik@gmail.com>"]
+edition = "2018"
+
+[features]
+default = ["static"]
+debug = []
+static = ["sdl2/bundled", "sdl2/static-link"]
+
+[profile.dev]
+debug = true
+
+[dependencies]
+sdl2 = { version = "0.38.0" }
+
